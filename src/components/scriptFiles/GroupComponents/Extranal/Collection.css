@@ -1,0 +1,92 @@
+.collection_list .group{
+    width: 100%;
+}
+.collection{
+    display: flex;
+    width: 95%;
+    height: 55vh;
+    margin: auto;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.collection::-webkit-scrollbar{
+    display: none;
+}
+
+.collection .container{
+    scroll-snap-align: start;
+    min-width: 160px;
+    height: 40vh;
+    border: .5px solid gray;
+    border-radius: 5px;
+    margin: 1rem 2rem;
+    text-align: start;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.collection div img{
+    margin: 0 auto;
+    width: 130px;
+    text-align: center;
+}
+.group_conatainer{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+}
+.group_conatainer span{
+    font-size: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.group_conatainer .main{
+    width: 60px;
+    height: 30px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+.group_conatainer .button{
+    height: 30px;
+    width: 60px;
+    border: none;
+    background-color: rgb(7, 136, 7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.group_conatainer .button button{
+    height: 30px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.collection .container p{
+    margin: 0;
+    font-size: 13px;
+    color: rgb(24, 24, 24);
+    font-weight: 600;
+}
+.collection .container small{
+    font-size: 10px;
+    display: flex;
+    background-color: rgb(234, 232, 232);
+    width: 47px;
+    gap: 2px;
+    padding: 0 .1rem;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.collection .container text{
+    font-weight: lighter;
+    font-size: 13px;
+    color: grey;
+}

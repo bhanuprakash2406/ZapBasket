@@ -1,0 +1,154 @@
+.SectionBody{
+    margin: 5rem 1rem;
+}
+.SectionBody .deal{
+    display: flex;
+    width: 95%;
+    height: 80vh;
+    column-gap: 2rem;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.SectionBody .deal .img1{
+    background-image: url("../scriptFiles/images/banner-ad-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+.SectionBody .deal h4{
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
+}
+.SectionBody .deal p{
+    font-size: clamp(2rem, 4vw, 2rem);
+    font-weight: bold;
+}
+.SectionBody .deal text{
+    font-size: clamp(1.5rem, 3vw, 1.5rem);
+}
+
+.SectionBody .deal .img2{
+    width: 40%;
+    height: 103%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .9rem;
+}
+.SectionBody .deal .img2 .one{
+    background-image: url("../scriptFiles/images/banner-ad-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 90%;
+    height: 34%;
+    padding: 2rem;
+}
+.SectionBody .deal .img2 .two{
+    background-image: url("../scriptFiles//images//banner-ad-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 90%;
+    height: 34%;
+    padding: 2rem;
+}
+.SectionBody .deal .img2 h4{
+    font-size: clamp(.5rem, 1vw, 1.5rem);
+}
+.SectionBody .deal .img2 p{
+    font-size: clamp(.5rem, 3vw, 2rem);
+    font-weight: bold;
+}
+.SectionBody .deal .img2 text{
+    font-size: clamp(.5rem, 2vw, 1.5rem);
+}
+.SectionBody .featured{
+    margin: 5rem auto;
+}
+.download{
+    width: 95%;
+    height: 40%;
+    border-radius: 10px;
+    margin: 3rem auto;
+    display: flex;
+    align-items: end;
+    padding: 2rem 0;
+    background-color: rgb(245, 188, 73);
+}
+.download .group{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.download .group p{
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: bold;
+}
+.download .group span{
+    font-size: clamp(.7rem, 1.5vw, 1.7rem);
+    color: rgb(44, 43, 43);
+}
+.download .group div{
+    display: flex;
+    margin: 2rem 0;
+    width: 90%;
+    justify-content: space-around;
+}
+.download .group img{
+    width: 35%;
+    height: 10vh;
+    
+}
+.download .banner{
+    width: 30%;
+    height: 60vh;
+}
+@media screen and (max-width: 778px) {
+    .SectionBody .deal{
+        margin: 3rem auto;
+        height: 160vh;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .SectionBody .deal .img1{
+        width: 85%;
+        height: 70vh;
+    }
+    .SectionBody .deal .img2{
+        width: 95%;
+    }
+    .SectionBody .deal .img2 h4{
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
+}
+.SectionBody .deal .img2 p{
+    font-size: clamp(2rem, 4vw, 2rem);
+    font-weight: bold;
+}
+.SectionBody .deal .img2 text{
+    font-size: clamp(1.5rem, 3vw, 1.5rem);
+}
+.download{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.download .group{
+    width: 95%;
+    align-items: center;
+}
+.download .banner{
+    width: 95%;
+    height: 60vh;
+}
+}

@@ -1,0 +1,113 @@
+.footer{
+    width: 95%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer .main{
+    display: flex;
+}
+.footer .main .head{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+.footer .main .head p{
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+.footer .main .head .icons{
+    display: flex;
+    width: 90%;
+    height: 6vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .main .head .icons .icon{
+    border: 1px solid rgb(206, 204, 204);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    color: gray;
+}
+.footer .main .organic{
+    width: 13vw;
+    margin: 0;
+    padding: 0 1rem;
+}
+.footer .main .organic p{
+    font-weight: bold;
+    font-size: clamp(1rem,2vw,1.5rem);
+    margin: 0;
+}
+.footer .main .organic ul{
+    list-style-type: none;
+    padding: 0;
+}
+.footer .main .organic ul li{
+    color: gray;
+    line-height: 1.9;
+}
+.footer .main .subscribe p{
+    font-weight: bold;
+    font-size: clamp(1rem,2vw,1.5rem);
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.footer .main .subscribe span{
+    color: gray;
+}
+.footer .main .subscribe .input{
+    margin: 2rem 0;
+    display: flex;
+    
+}
+.footer .main .subscribe .input input{
+    border: none;
+    font-size: 1rem;
+}
+.footer .main .subscribe .input .email{
+    background-color: rgb(234, 231, 231);
+    padding: 1rem;
+    border-radius: 10px 0 0 10px;
+}
+.footer .main .subscribe div .submit{
+    background-color: black;
+    color: white;    
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+}.footer .bottom{
+    text-align: center;
+    color: rgb(165, 165, 165);
+}
+@media screen and (max-width: 900px){
+    .footer .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer .main .organic{
+        width: 40%;
+    }
+    .footer .main .head{
+        width: 40%;
+        align-items: start;
+    }
+    .footer .main .head .icons{
+        justify-content: start;
+        column-gap: .1rem;
+    }
+    .footer .main .subscribe{
+        text-align: center;
+        width: 90%;
+        justify-items: center;
+    }
+    .footer .main .subscribe .email{
+        width: 30vw;
+    }
+}

@@ -1,0 +1,310 @@
+html {
+  overscroll-behavior: none;
+}
+.main-header{
+    background-color: aquamarine;
+    display: flex;
+    min-height: 15vh;
+    justify-content: start;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.main-header .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.title{
+    display: flex;
+    align-items: end;
+    height: 10vh;
+    gap: .5rem; 
+}
+h2{
+    display: flex;
+    margin: 0;
+    align-items: end;
+    font-size: 2rem;
+    height: 75%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    width: 60px;
+}
+.list{
+    font-size: 2rem;
+    margin-left:.5rem;
+}
+.search-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25vw;
+    height: 10vh;
+    gap: .5rem;
+    background-color: rgb(178, 251, 227);
+    border-radius: 15px;
+}
+.search-bar input{
+    height: 50%;
+    width: 60%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1rem;
+}
+.search-bar input:focus{
+    border: 3px solid lightblue;
+    border-radius: 10px;
+}
+.search{
+    font-size: 1.2rem;
+    color: grey;
+}
+.hidden .icon{
+    display: none;
+}
+.user-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
+    width: 15vw;
+}
+.user-actions .icon{
+    width: 3vw;
+    height: 4vh;
+}
+.user-actions .cart{
+    width: 9vw;
+    height: 10vh;
+    padding: 0 .2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .9rem;
+    font-weight: bold;
+    display: flex;
+    border: none;
+    color: rgb(240, 238, 238);
+    flex-flow: wrap;
+    border-radius: 10px;    
+    background-color: rgb(201, 189, 189);
+    align-items: center;
+    justify-content: center;
+    cursor:not-allowed;
+}
+.user-actions .cart p{
+    margin: 0;
+}
+.user-actions .cartData{
+    background-color: green;
+    width: 9vw;
+    padding: 0 .2rem;
+    height: 10vh;
+    border-radius: 10px;  
+    display: flex;
+    gap: .5rem;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.user-actions .cartData p{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+.user-actions .cartData::after{
+    content: '';
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: .5rem;
+    margin-right: 2rem;
+}
+.location p{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.location h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.address{
+    padding: .5rem;
+    display: none ;
+    position: absolute;
+    border: none;
+    width: 30vw;
+    margin-top: 13rem;
+    height: 20vh;
+    background-color: rgb(234, 246, 250);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#address.active{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+.address .group{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.address p{
+    color: rgb(99, 99, 99);
+    margin-top: .5rem;
+}
+.address span{
+    font-size: clamp(.7rem, 1vw, 1rem); 
+    background-color: rgb(19, 125, 19);
+    color: white;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.address text{
+    font-size: 10px;
+    margin: 0 .5rem;
+    text-align: center;
+    align-content: center;
+    width: 20px;
+    color: grey;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.address input{
+    width: 13vw;
+    height: 3.5vh;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: .5rem;
+}
+.collections{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    float: left;
+    row-gap: .5rem;
+    height: 100%;
+    min-width: 30vw;
+    background-color: white;
+}
+.collections.active{
+    display: flex;
+    position: fixed;
+}
+.collections ul{
+    list-style: none;
+    display: flex;
+    overflow-y: scroll;
+    padding: 1rem 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.collections ul li{
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-bottom: 1px dashed gray;
+    padding: .5rem .5rem;
+    margin: 0 1rem;
+}
+.collections ul li a{
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    display: flex;
+    column-gap:.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.collections .group{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    align-items: center;
+}
+.collections .group p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+@media screen and (max-width: 920px){
+     .main-header{
+        height: auto;
+        padding: .5rem 0;
+    }
+    .main-header .container{
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        inset: 0;
+        gap: 1rem;
+    }
+    .search-bar{
+        width: 80vw;
+    }
+    .user-actions{
+        width: 30vw;
+        justify-content: space-evenly;
+    }
+    .user-actions .icon{
+        width: 5vw;
+    }
+    .user-actions .cart{
+        width: 15vw;
+        gap:.5rem
+    }
+    .address{
+        width: 50vw;
+        height: 20vh;
+    }
+    .collections{
+        min-width: 60vw;
+    }
+    .user-actions .cart{
+        display: none;
+    }
+    .user-actions .cartData{
+        position: fixed;
+        top: 85%;
+        margin: 32rem auto;
+        inset: 0;
+        min-width: 92%;
+        text-align: start;
+        padding: 0 1rem;
+    }
+    .user-actions .cartData p{
+        font-weight: normal;
+    }
+    .user-actions .cartData .icon{
+        padding: .4rem .3rem;
+        border-radius: 10px;
+        background-color: rgba(175, 174, 174, 0.3)
+    }
+    .user-actions .cartData::after{
+        content: 'view cart ▶';
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: right;
+        font-size: 20px;
+        position: absolute;
+        right: 1rem;
+    }
+    .hidden .icon{
+        display: inline;
+        width: 10vw;
+        font-size: 10rem;
+        height: 7vh;
+    }
+    .visiable .icon{
+        display: none;
+    }
+    
+}
