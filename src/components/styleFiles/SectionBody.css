@@ -75,7 +75,7 @@
 }
 .download{
     width: 95%;
-    height: 40%;
+    min-height: 40%;
     border-radius: 10px;
     margin: 3rem auto;
     display: flex;
@@ -93,7 +93,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .download .group p{
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: bold;
 }
 .download .group span{
@@ -142,13 +142,14 @@
 .download{
     flex-wrap: wrap-reverse;
     justify-content: center;
+    height: 30%;
 }
 .download .group{
     width: 95%;
     align-items: center;
 }
 .download .banner{
-    width: 95%;
-    height: 60vh;
+    width: 65%;
+    height: 30vh;
 }
 }

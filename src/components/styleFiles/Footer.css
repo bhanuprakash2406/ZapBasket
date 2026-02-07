@@ -15,8 +15,11 @@
     align-items: center;
     margin: 0;
 }
+.footer .main .head img{
+    width: 5vw;
+}
 .footer .main .head p{
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
