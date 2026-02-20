@@ -62,8 +62,8 @@ function togglecollections(){
             <div className='cartData'>
                 <BsBasket className='icon' />
                     <div className='cart1'>
-                        <p>{sumOf} items</p> 
-                        <p>₹ {totalAmount}</p>
+                        <p>{sumOf} items </p> 
+                        <p> ₹ {totalAmount}</p>
                     </div>
             </div>) : <div className='cart'><BsBasket className='icon' /><p>My Cart</p></div>}
         </div>

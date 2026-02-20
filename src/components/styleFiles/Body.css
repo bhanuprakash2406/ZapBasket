@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    z-index: 100;
 }
 .container-body{
     height: 80%;
@@ -116,6 +117,9 @@ body{
     background-color: orangered;
 }
 @media screen and (max-width: 778px) {
+    body{
+        width: 110%;
+    }
     .content{
         width: 90%;
         margin: auto;

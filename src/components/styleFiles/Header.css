@@ -273,23 +273,37 @@ img{
         display: none;
     }
     .user-actions .cartData{
-        position: fixed;
-        top: 85%;
+        position: absolute;
+        background-color: transparent;
+        width: 105%;
+        display: flex;
+        height: 120%;
+        margin-top: 2rem;
+        align-items: center;
+        
+    }
+    .user-actions .cartData .cart1{
+        display: flex;
+        align-items: center;
         margin: 32rem auto;
         inset: 0;
-        min-width: 92%;
+        height: 10vh;
+        width: 105%;
         text-align: start;
+        background-color: green;
         padding: 0 1rem;
     }
     .user-actions .cartData p{
         font-weight: normal;
+        font-size: 20px;
+        margin-left: 5px;
     }
     .user-actions .cartData .icon{
         padding: .4rem .3rem;
         border-radius: 10px;
         background-color: rgba(175, 174, 174, 0.3)
     }
-    .user-actions .cartData::after{
+    .user-actions .cartData .cart1::after{
         content: 'view cart ▶';
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: right;
