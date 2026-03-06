@@ -48,7 +48,7 @@
 }
 .location_modal button{
     height: 40px;
-    min-width: 100px;
+    width: 36%;
     border-radius: 5px;
     border: 1px solid transparent;
     background-color: green;
@@ -57,6 +57,7 @@
 }
 .location_modal input{
     height: 33px;
+    width: 45%;
     border: 1px solid gray;
     outline: none;
     border-radius: 5px;
