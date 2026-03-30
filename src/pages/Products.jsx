@@ -23,22 +23,24 @@ return (
           return (
           <div className='product' key={item.id}>
             <img src={item.img} alt={item.name} style={{width:'100px'}}/>
+            <div className='pro_content'>
             <small>
               <PiTimer style={{color:'green'}}/> 12 MINS
             </small>
-            <p>{item.name}</p>
-            <span>{item.qty}</span>
-            <div className='product_btn'>
-              <h4>{item.mrp}</h4>
-              <div>
-                {count > 0 ? (
-                  <div className='btn_counts'>
-                    <button className='btn_count' onClick={() => removeItem(item.id)}>-</button>
-                    <p>{count}</p>
-                    <button className='btn_count' onClick={() => addItem(item.id)}>+</button>
-                  </div>) : (<button className='btn_main' onClick={() => addItem(item.id)}>ADD</button>
-                )}
-              </div>
+              <p>{item.name}</p>
+              <span>{item.qty}</span>
+              <div className='product_btn'>
+                <h4>{item.mrp}</h4>
+                <div>
+                  {count > 0 ? (
+                    <div className='btn_counts'>
+                      <button className='btn_count' onClick={() => removeItem(item.id)}>-</button>
+                      <p>{count}</p>
+                      <button className='btn_count' onClick={() => addItem(item.id)}>+</button>
+                    </div>) : (<button className='btn_main' onClick={() => addItem(item.id)}>ADD</button>
+                  )}
+                </div>
+                </div>
             </div>
           </div>
           )
@@ -54,22 +56,24 @@ return (
           return (
           <div className='product' key={item.id}>
             <img src={item.img} alt={item.name} style={{width:'100px'}}/>
+            <div className='pro_content'>
             <small>
               <PiTimer style={{color:'green'}}/> 12 MINS
             </small>
-            <p>{item.name}</p>
-            <span>{item.qty}</span>
-            <div className='product_btn'>
-              <h4>{item.mrp}</h4>
-              <div>
-                {count > 0 ? (
-                  <div className='btn_counts'>
-                    <button className='btn_count' onClick={() => removeItem(item.id)}>-</button>
-                    <p>{count}</p>
-                    <button className='btn_count' onClick={() => addItem(item.id)}>+</button>
-                  </div>) : (<button className='btn_main' onClick={() => addItem(item.id)}>ADD</button>
-                )}
-              </div>
+              <p>{item.name}</p>
+              <span>{item.qty}</span>
+              <div className='product_btn'>
+                <h4>{item.mrp}</h4>
+                <div>
+                  {count > 0 ? (
+                    <div className='btn_counts'>
+                      <button className='btn_count' onClick={() => removeItem(item.id)}>-</button>
+                      <p>{count}</p>
+                      <button className='btn_count' onClick={() => addItem(item.id)}>+</button>
+                    </div>) : (<button className='btn_main' onClick={() => addItem(item.id)}>ADD</button>
+                  )}
+                </div>
+                </div>
             </div>
           </div>
           )
@@ -83,24 +87,26 @@ return (
         {mostPopular.map(item => {
           const count = cart[item.id] || 0;
           return (
-          <div className='product' key={item.id}>
+         <div className='product' key={item.id}>
             <img src={item.img} alt={item.name} style={{width:'100px'}}/>
+            <div className='pro_content'>
             <small>
               <PiTimer style={{color:'green'}}/> 12 MINS
             </small>
-            <p>{item.name}</p>
-            <span>{item.qty}</span>
-            <div className='product_btn'>
-              <h4>{item.mrp}</h4>
-              <div>
-                {count > 0 ? (
-                  <div className='btn_counts'>
-                    <button className='btn_count' onClick={() => removeItem(item.id)}>-</button>
-                    <p>{count}</p>
-                    <button className='btn_count' onClick={() => addItem(item.id)}>+</button>
-                  </div>) : (<button className='btn_main' onClick={() => addItem(item.id)}>ADD</button>
-                )}
-              </div>
+              <p>{item.name}</p>
+              <span>{item.qty}</span>
+              <div className='product_btn'>
+                <h4>{item.mrp}</h4>
+                <div>
+                  {count > 0 ? (
+                    <div className='btn_counts'>
+                      <button className='btn_count' onClick={() => removeItem(item.id)}>-</button>
+                      <p>{count}</p>
+                      <button className='btn_count' onClick={() => addItem(item.id)}>+</button>
+                    </div>) : (<button className='btn_main' onClick={() => addItem(item.id)}>ADD</button>
+                  )}
+                </div>
+                </div>
             </div>
           </div>
           )
@@ -116,22 +122,24 @@ return (
           return (
           <div className='product' key={item.id}>
             <img src={item.img} alt={item.name} style={{width:'100px'}}/>
+            <div className='pro_content'>
             <small>
               <PiTimer style={{color:'green'}}/> 12 MINS
             </small>
-            <p>{item.name}</p>
-            <span>{item.qty}</span>
-            <div className='product_btn'>
-              <h4>{item.mrp}</h4>
-              <div>
-                {count > 0 ? (
-                  <div className='btn_counts'>
-                    <button className='btn_count' onClick={() => removeItem(item.id)}>-</button>
-                    <p>{count}</p>
-                    <button className='btn_count' onClick={() => addItem(item.id)}>+</button>
-                  </div>) : (<button className='btn_main' onClick={() => addItem(item.id)}>ADD</button>
-                )}
-              </div>
+              <p>{item.name}</p>
+              <span>{item.qty}</span>
+              <div className='product_btn'>
+                <h4>{item.mrp}</h4>
+                <div>
+                  {count > 0 ? (
+                    <div className='btn_counts'>
+                      <button className='btn_count' onClick={() => removeItem(item.id)}>-</button>
+                      <p>{count}</p>
+                      <button className='btn_count' onClick={() => addItem(item.id)}>+</button>
+                    </div>) : (<button className='btn_main' onClick={() => addItem(item.id)}>ADD</button>
+                  )}
+                </div>
+                </div>
             </div>
           </div>
           )
