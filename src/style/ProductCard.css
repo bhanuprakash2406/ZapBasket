@@ -46,3 +46,13 @@ display: none;
         display: flex;
     }
 }
+@media (max-width: 420px){
+    .productcard .card{
+        display: flex;
+        flex-flow: wrap;
+        gap: 1rem;
+        margin: 0 1rem;
+        padding: 1rem 0;
+        color: rgb(38, 38, 38);
+        text-align: center;
+    }
